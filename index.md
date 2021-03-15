@@ -3,10 +3,10 @@ title: Off-resonant Drive of an Optical Cavity for Coupling with a Mechanical Re
 keywords: acoustomechanis
 ---
 
-<script src="/rough/rough.js"></script>
-<script src="/rough/rough-viz.js"></script>
-<script src="/rough/rough-notation.js"></script>
-<script src="/rough/roughhelpers.js"></script>
+<script src="./rough/rough.js"></script>
+<script src="./rough/rough-viz.js"></script>
+<script src="./rough/rough-notation.js"></script>
+<script src="./rough/roughhelpers.js"></script>
 <style>
 @font-face {
   font-family: 'Indie Flower';
