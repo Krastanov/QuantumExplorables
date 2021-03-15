@@ -105,8 +105,8 @@
 <p>We can toy a bit with the optical part of this Hamiltonian and see that the ground state (one of the steady states) is relatively easy to depict in this frame. It is simply the coherent state <span class="math inline">\(\mid\alpha\rangle\)</span>, where <span class="math display">\[\alpha=-\frac{\varepsilon}{\Delta}.\]</span></p>
 <p>There are a couple of ways to see this, e.g.</p>
 <ul>
-<li>Solve <span class="math inline">\(0=\left[\hat{H}_1,\mid\alpha\rangle\langle\alpha\mid\right]\)</span>.</li>
-<li>Draw a Wigner diagram with the flow lines of a coherent state experiencing translation due to <span class="math inline">\({\color{B} \omega_b \hat{b}^\dagger \hat{b}}\)</span> and rotation due to <span class="math inline">\({\color{A} \Delta \hat{a}^\dagger \hat{a}}\)</span>, and find where they cancel each other.</li>
+<li>Solve <span class="math inline">\(0=\left[\hat{H}_1,\mid\alpha\rangle\langle\alpha\mid\right]\)</span> or <span class="math inline">\(0 = \hat{H}_1\mid\alpha\rangle\)</span>.</li>
+<li>Draw a Wigner diagram with the flow lines of a coherent state experiencing translation due to <span class="math inline">\({\color{E} \varepsilon^*\hat{a} + \mathrm{H.c.}}\)</span> and rotation due to <span class="math inline">\({\color{A} \Delta \hat{a}^\dagger \hat{a}}\)</span>, and find where they cancel each other.</li>
 <li>Go to the Displaced frame in which it is easy to set up ladder operators after canceling out the displacement. This is the “correct” way to do it. As a bonus, this is also what you need to do in order to get the linearized-optomechanical coupling.</li>
 </ul>
 <h2 id="displaced-frame-second-change-of-frame">Displaced frame (second change of frame)</h2>
@@ -329,6 +329,8 @@ requestAnimationFrame(draw_labframecoh);
 <h3 id="decay-from-undriven-cavity-a-primer-to-fermis-golden-rule">Decay from undriven cavity (a primer to Fermi’s golden rule)</h3>
 <p>To set the stage, we would first consider a simpler problem: the decay of an undriven cavity weakly coupled to the continuum. The Hamiltonian of this system is <span class="math display">\[\hat{H}\frac{1}{\hbar}=\omega \hat{a}^\dagger\hat{a} + \sum_k \left(\omega_k\hat{w}^\dagger\hat{w}+\gamma \hat{a}\hat{w}_k^\dagger+\gamma \hat{a}^\dagger\hat{w}_k\right),\]</span> where <span class="math inline">\(w_k\)</span> is the k-th mode of the environment. At <span class="math inline">\(\gamma=0\)</span> the eigenstates are the Fock states. We would like to learn the rate at which <span class="math inline">\(|1\rangle\)</span> decays into <span class="math inline">\(|0\rangle\)</span> when the perturbation <span class="math inline">\(\gamma\)</span> is turned on. The ket <span class="math inline">\(|n,m_k\rangle\)</span> will be used to denote <span class="math inline">\(n\)</span> photons in the cavity, <span class="math inline">\(m\)</span> photons in the k-th environmental mode, and zero photons in all other environmental modes. An unperturbed state <span class="math inline">\(|n,m_k\rangle\)</span> evolves in time as <span class="math inline">\(e^{i(n\omega+m\omega_k t)}|n,m_k\rangle\)</span></p>
 <p><em>TODO: finish the discussion of the decay, derive the Lindblad master equation</em></p>
+<p><em>TODO: calculate the entire spectrum, including both the laser and the cavity lines</em></p>
+<p><em>TODO: flesh out input-output theory description</em></p>
 <h2 id="references">References</h2>
 <p><em>TODO: prettier formatting for references</em></p>
 <div id="refs" class="references csl-bib-body hanging-indent" role="doc-bibliography">

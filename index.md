@@ -93,8 +93,8 @@ We can toy a bit with the optical part of this Hamiltonian and see that the grou
 
 There are a couple of ways to see this, e.g.
 
-- Solve $0=\left[\hat{H}_1,\mid\alpha\rangle\langle\alpha\mid\right]$.
-- Draw a Wigner diagram with the flow lines of a coherent state experiencing translation due to ${\color{B} \omega_b \hat{b}^\dagger \hat{b}}$ and rotation due to ${\color{A} \Delta \hat{a}^\dagger \hat{a}}$, and find where they cancel each other.
+- Solve $0=\left[\hat{H}_1,\mid\alpha\rangle\langle\alpha\mid\right]$ or $0 = \hat{H}_1\mid\alpha\rangle$.
+- Draw a Wigner diagram with the flow lines of a coherent state experiencing translation due to ${\color{E} \varepsilon^*\hat{a} + \mathrm{H.c.}}$ and rotation due to ${\color{A} \Delta \hat{a}^\dagger \hat{a}}$, and find where they cancel each other.
 - Go to the Displaced frame in which it is easy to set up ladder operators after canceling out the displacement. This is the "correct" way to do it. As a bonus, this is also what you need to do in order to get the linearized-optomechanical coupling.
 
 ## Displaced frame (second change of frame)
@@ -281,6 +281,11 @@ where $w_k$ is the k-th mode of the environment.
 At $\gamma=0$ the eigenstates are the Fock states. We would like to learn the rate at which $|1\rangle$ decays into $|0\rangle$ when the perturbation $\gamma$ is turned on. The ket $|n,m_k\rangle$ will be used to denote $n$ photons in the cavity, $m$ photons in the k-th environmental mode, and zero photons in all other environmental modes. An unperturbed state $|n,m_k\rangle$ evolves in time as $e^{i(n\omega+m\omega_k t)}|n,m_k\rangle$
 
 _TODO: finish the discussion of the decay, derive the Lindblad master equation_
+
+_TODO: calculate the entire spectrum, including both the laser and the cavity lines_
+
+_TODO: flesh out input-output theory description_
+
 
 ## References
 
