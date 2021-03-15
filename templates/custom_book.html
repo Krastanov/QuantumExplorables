@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" lang="$lang$" xml:lang="$lang$"$if(dir)$ dir="$dir$"$endif$>
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <link rel="apple-touch-icon-precomposed" href="/colorwheel180.png">
+  <link rel="icon" href="/colorwheel196.png">
+  <meta property="og:title" content="The SpinWheel" />
+  <meta property="og:type" content="website" />
+  <meta property="og:description" content="Children have the natural curiosity and capacity to engineer a better world. Our kits just remind them." />
+  <meta property="og:image" content="https://spinwearables.com/hanging.jpg" />
+  <link rel="image_src" href="https://spinwearables.com/hanging.jpg" />
+$for(author-meta)$
+  <meta name="author" content="$author-meta$" />
+$endfor$
+$if(date-meta)$
+  <meta name="dcterms.date" content="$date-meta$" />
+$endif$
+$if(keywords)$
+  <meta name="keywords" content="$for(keywords)$$keywords$$sep$, $endfor$" />
+$endif$
+  <title>$if(title-prefix)$$title-prefix$ – $endif$$pagetitle$</title>
+  <style>
+$if(quotes)$
+      q { quotes: "“" "”" "‘" "’"; }
+$endif$
+  </style>
+$if(highlighting-css)$
+  <style>
+$highlighting-css$
+  </style>
+$endif$
+$for(css)$
+  <link rel="stylesheet" href="$css$" />
+$endfor$
+$if(math)$
+  $math$
+$endif$
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+$for(header-includes)$
+  $header-includes$
+$endfor$
+<!-- Matomo -->
+<script type="text/javascript">
+</script>
+<!-- End Matomo Code -->
+</head>
+<body>
+<!-- Matomo Image Tracker-->
+<!-- End Matomo -->
+$for(include-before)$
+$include-before$
+$endfor$
+<header>
+<div class="nav">
+</div>
+$if(header-image)$
+<img src="$header-image$">
+$endif$
+$if(header-video)$
+<video src="$header-video$" muted autoplay playsinline></video>
+$endif$
+$if(title)$
+<h1 class="title">$title$</h1>
+$if(subtitle)$
+<p class="subtitle">$subtitle$</p>
+$endif$
+$for(author)$
+<p class="author">$author$</p>
+$endfor$
+$if(date)$
+<p class="date">$date$</p>
+$endif$
+</header>
+$endif$
+<main>
+$if(toc)$
+</nav>
+$endif$
+$body$
+$for(include-after)$
+$include-after$
+$endfor$
+</main>
+<div id="license">
+</div>
+</body>
+</html>
